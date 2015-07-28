@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        BuddyBuildSDK.setup()
+        
         // Override point for customization after application launch.
 
         BITHockeyManager.sharedHockeyManager().configureWithIdentifier("b65f9fa234965385488c14ecdbe4b4b4");
